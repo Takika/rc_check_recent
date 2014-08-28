@@ -1,0 +1,24 @@
+{
+    "name": "takika/rc_check_recent",
+    "type": "roundcube-plugin",
+    "description": "Roundcube webmail plugin to do per-folder recent check",
+    "homepage": "https://github.com/Takika/rc_check_recent",
+    "license": "AGPLv3",
+    "authors": [
+        {
+            "name": "Sandor Takacs",
+            "email": "taki@alkoholista.hu",
+            "role": "Developer"
+        }
+    ],
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "http://plugins.roundcube.net"
+        }
+    ],
+    "require": {
+        "php": ">=5.3.0",
+        "roundcube/plugin-installer": ">=0.1.3"
+    }
+}
