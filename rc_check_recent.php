@@ -102,7 +102,7 @@ class rc_check_recent extends rcube_plugin
             $check_box = new html_checkbox(array('name' => '_check_recent', 'id' => '_check_recent', 'value' => 1));
 
             $content['check_recent'] = array(
-            'label' => rcube_label('checkmail'),
+            'label' => $this->gettext('checkmail'),
             'value'	=> $check_box->show($checked, array('disabled' => $disabled)),
             );
         }
@@ -121,7 +121,7 @@ class rc_check_recent extends rcube_plugin
     {
         $mbox         = $args['record']['name'];
         $settings     = $args['record']['settings'];
-        $check_recent = get_input_value('_check_recent', RCUBE_INPUT_POST);
+        $check_recent = rcube_utils::get_input_value('_check_recent', rcube_utils::INPUT_POST);
         $tmp_recent   = $this->rc->config->get('check_recent_folders');
 
         if (!is_array($tmp_recent)) {
