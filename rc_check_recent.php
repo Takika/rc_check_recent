@@ -107,7 +107,7 @@ class rc_check_recent extends rcube_plugin
             );
         }
 
-        if (is_array($content) && !array_key_exists('check_recent', $options)) {
+        if (is_array($options) && !array_key_exists('check_recent', $options)) {
             $options['check_recent'] = $checked;
         }
 
